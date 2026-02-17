@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Suivi ciment</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<h1>Suivi journalier de l'utilisation du ciment</h1>
+
+<form id="cementForm">
+    <input type="date" id="date" required>
+    <input type="number" id="quantity" step="0.5" min="0.5" required>
+    <select id="type">
+        <option>CEM I</option>
+        <option>CEM II</option>
+    </select>
+    <input type="text" id="supplier">
+    <input type="text" id="comment">
+    <button type="submit">Ajouter</button>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Quantité</th>
+            <th>Type</th>
+            <th>Fournisseur</th>
+            <th>Commentaire</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+
+<div id="totalDisplay">Total sacs utilisés : 0</div>
+
+<script src="app.js"></script>
+</body>
+</html>
