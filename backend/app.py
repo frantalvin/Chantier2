@@ -1,4 +1,4 @@
-const API = "https://cement-api.onrender.com/cement";
+const API = "https://chantier-ww1l.onrender.com";
 
 const form = document.getElementById("cementForm");
 const tbody = document.getElementById("tableBody");
